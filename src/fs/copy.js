@@ -13,7 +13,7 @@ const copy = async () => {
             } else {
               throw error;
             }
-        })
+        });
     } catch (err) {
         console.log(err);
     }
