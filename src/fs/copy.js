@@ -14,6 +14,14 @@ const copy = async () => {
               throw error;
             }
         });
+
+        access('src/fs/files', (err) => {
+            if (err) {
+                throw error;
+            } else {
+                console.log('Files folder exists');
+            }
+        })
     } catch (err) {
         console.log(err);
     }
